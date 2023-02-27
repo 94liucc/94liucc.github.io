@@ -4,23 +4,23 @@
   
     
     <entry>
-      <title>Svg</title>
-      <link href="/2023/02/03/Svg/"/>
-      <url>/2023/02/03/Svg/</url>
+      <title>Hexo部署到GitHubPages</title>
+      <link href="/2023/02/03/Hexo/"/>
+      <url>/2023/02/03/Hexo/</url>
       
-        <content type="html"><![CDATA[<h1 id="Svg"><a href="#Svg" class="headerlink" title="Svg"></a>Svg</h1><h2 id="pattern"><a href="#pattern" class="headerlink" title="pattern"></a>pattern</h2><h3 id="一个图案填充标签，可以在-pattern-中定义好图案，然后通过-id-引用来对某个图形进行填充"><a href="#一个图案填充标签，可以在-pattern-中定义好图案，然后通过-id-引用来对某个图形进行填充" class="headerlink" title="一个图案填充标签，可以在 pattern 中定义好图案，然后通过 id 引用来对某个图形进行填充"></a>一个图案填充标签，可以在 pattern 中定义好图案，然后通过 id 引用来对某个图形进行填充</h3><h3 id="使用-rect-来填充这个-pattern"><a href="#使用-rect-来填充这个-pattern" class="headerlink" title="使用 rect 来填充这个 pattern"></a>使用 rect 来填充这个 pattern</h3><h2 id="defs"><a href="#defs" class="headerlink" title="defs"></a>defs</h2><h3 id="定义一些可供重用的元素，组等"><a href="#定义一些可供重用的元素，组等" class="headerlink" title="定义一些可供重用的元素，组等"></a>定义一些可供重用的元素，组等</h3><h2 id="use"><a href="#use" class="headerlink" title="use"></a>use</h2><h3 id="用来使用-被定义的元素"><a href="#用来使用-被定义的元素" class="headerlink" title="用来使用 被定义的元素"></a>用来使用 被定义的元素</h3><h2 id="symbol"><a href="#symbol" class="headerlink" title="symbol"></a>symbol</h2><h3 id="定义一组可重用的元素"><a href="#定义一组可重用的元素" class="headerlink" title="定义一组可重用的元素"></a>定义一组可重用的元素</h3><h3 id="可以定义自己的视窗"><a href="#可以定义自己的视窗" class="headerlink" title="可以定义自己的视窗"></a>可以定义自己的视窗</h3><h2 id="textPath"><a href="#textPath" class="headerlink" title="textPath"></a>textPath</h2><h3 id="可以根据传入的-path-值来放置-text-文字"><a href="#可以根据传入的-path-值来放置-text-文字" class="headerlink" title="可以根据传入的 path 值来放置 text 文字"></a>可以根据传入的 path 值来放置 text 文字</h3>]]></content>
+        <content type="html"><![CDATA[<p>最近想要把 Hexo 部署到 GitHubPages 来搭建自己的博客，分享一下具体步骤。</p><h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>登录自己的 GitHub 账号，然后创建一个仓库</p><p><strong>repository 应该直接命名为 &lt;你的 GitHub 用户名&gt;.github.io</strong></p><p><strong>这一步是必须要做的，哪怕你之前有一个仓库专门放 Hexo 的代码</strong></p><h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>在 hexo 项目根目录</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm <span class="token function">install</span> <span class="token parameter variable">--save</span> hexo-deployer-git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h2 id="修改-config-yml-文件"><a href="#修改-config-yml-文件" class="headerlink" title="修改_config.yml 文件"></a>修改_config.yml 文件</h2><p>根目录文件夹中找到_config.yml 文件，在文件的最后，加入 如下内容</p><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">deploy</span><span class="token operator">:</span> type<span class="token operator">:</span> git<span class="token punctuation">;</span><span class="token literal-property property">repo</span><span class="token operator">:</span> 第一步创建的仓库地址<span class="token punctuation">;</span><span class="token literal-property property">branch</span><span class="token operator">:</span> master<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>例如</p><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">deploy</span><span class="token operator">:</span>  <span class="token literal-property property">type</span><span class="token operator">:</span> git  <span class="token literal-property property">repo</span><span class="token operator">:</span> git@github<span class="token punctuation">.</span>com<span class="token operator">:</span>94liucc<span class="token operator">/</span>94liucc<span class="token punctuation">.</span>github<span class="token punctuation">.</span>io<span class="token punctuation">.</span>git  <span class="token literal-property property">branch</span><span class="token operator">:</span> master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><h2 id="修改-url"><a href="#修改-url" class="headerlink" title="修改 url"></a>修改 url</h2><p>如果不去修改 Url 的话，可能导致我们的博客无法找到 css 文件</p><p><strong>更改_config.yml 文件下的如下参数</strong></p><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">url</span><span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">gitname.github.io</span><span class="token regex-delimiter">/</span></span><span class="token literal-property property">root</span><span class="token operator">:</span> <span class="token operator">/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>其中 root 参数可以在自己的 github 仓库的 Settings-&gt;Pages-&gt;Branch 里面找到文件夹，默认是 root，所以参数这里填写 /</p><h2 id="打包部署"><a href="#打包部署" class="headerlink" title="打包部署"></a>打包部署</h2><p>依次执行一下命令，打包部署即可</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo ghexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>然后打开 git 项目地址的 Actions 等待部署完成，之后去你填写的 url 的地址就能看到你的博客了</p>]]></content>
       
       
       <categories>
           
-          <category> abc </category>
+          <category> hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 123 </tag>
+            <tag> hexo </tag>
             
         </tags>
       
@@ -98,6 +98,31 @@
             <tag> HTTP </tag>
             
             <tag> 协议 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Svg</title>
+      <link href="/2022/02/03/Svg/"/>
+      <url>/2022/02/03/Svg/</url>
+      
+        <content type="html"><![CDATA[<h2 id="pattern"><a href="#pattern" class="headerlink" title="pattern"></a>pattern</h2><h3 id="一个图案填充标签，可以在-pattern-中定义好图案，然后通过-id-引用来对某个图形进行填充"><a href="#一个图案填充标签，可以在-pattern-中定义好图案，然后通过-id-引用来对某个图形进行填充" class="headerlink" title="一个图案填充标签，可以在 pattern 中定义好图案，然后通过 id 引用来对某个图形进行填充"></a>一个图案填充标签，可以在 pattern 中定义好图案，然后通过 id 引用来对某个图形进行填充</h3><h3 id="使用-rect-来填充这个-pattern"><a href="#使用-rect-来填充这个-pattern" class="headerlink" title="使用 rect 来填充这个 pattern"></a>使用 rect 来填充这个 pattern</h3><h2 id="defs"><a href="#defs" class="headerlink" title="defs"></a>defs</h2><h3 id="定义一些可供重用的元素，组等"><a href="#定义一些可供重用的元素，组等" class="headerlink" title="定义一些可供重用的元素，组等"></a>定义一些可供重用的元素，组等</h3><h2 id="use"><a href="#use" class="headerlink" title="use"></a>use</h2><h3 id="用来使用-被定义的元素"><a href="#用来使用-被定义的元素" class="headerlink" title="用来使用 被定义的元素"></a>用来使用 被定义的元素</h3><h2 id="symbol"><a href="#symbol" class="headerlink" title="symbol"></a>symbol</h2><h3 id="定义一组可重用的元素"><a href="#定义一组可重用的元素" class="headerlink" title="定义一组可重用的元素"></a>定义一组可重用的元素</h3><h3 id="可以定义自己的视窗"><a href="#可以定义自己的视窗" class="headerlink" title="可以定义自己的视窗"></a>可以定义自己的视窗</h3><h2 id="textPath"><a href="#textPath" class="headerlink" title="textPath"></a>textPath</h2><h3 id="可以根据传入的-path-值来放置-text-文字"><a href="#可以根据传入的-path-值来放置-text-文字" class="headerlink" title="可以根据传入的 path 值来放置 text 文字"></a>可以根据传入的 path 值来放置 text 文字</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 可视化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> svg </tag>
             
         </tags>
       
@@ -361,9 +386,9 @@
       
         <tags>
             
-            <tag> HTTP </tag>
-            
             <tag> 浏览器 </tag>
+            
+            <tag> HTTP </tag>
             
         </tags>
       
@@ -388,9 +413,9 @@
       
         <tags>
             
-            <tag> HTTP </tag>
-            
             <tag> 浏览器 </tag>
+            
+            <tag> HTTP </tag>
             
         </tags>
       

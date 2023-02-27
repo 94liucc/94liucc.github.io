@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="应用层, 柚子茶">
+    <meta name="keywords" content="Hexo部署到GitHubPages, 柚子茶">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>应用层 | 柚子茶</title>
+    <title>Hexo部署到GitHubPages | 柚子茶</title>
     <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -290,12 +290,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">应用层</h1>
+                    <h1 class="description center-align post-title">Hexo部署到GitHubPages</h1>
                 </div>
             </div>
         </div>
@@ -411,12 +411,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/HTTP/">
-                                <span class="chip bg-color">HTTP</span>
-                            </a>
-                        
-                            <a href="/tags/%E5%8D%8F%E8%AE%AE/">
-                                <span class="chip bg-color">协议</span>
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
                     </div>
@@ -427,8 +423,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/" class="post-category">
-                                通信协议
+                            <a href="/categories/hexo/" class="post-category">
+                                hexo
                             </a>
                         
                     </div>
@@ -440,7 +436,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-02-10
+                    2023-02-03
                 </div>
                 
 
@@ -449,7 +445,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    423
+                    314
                 </div>
                 
 
@@ -474,98 +470,35 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><p><strong>基于 TCP</strong></p>
-<h3 id="构成"><a href="#构成" class="headerlink" title="构成"></a>构成</h3><ul>
-<li><p>请求行</p>
-<ul>
-<li><p>get</p>
-<ul>
-<li>查</li>
-</ul>
-</li>
-<li><p>post</p>
-<ul>
-<li>增</li>
-<li>创建一个资源</li>
-</ul>
-</li>
-<li><p>put</p>
-<ul>
-<li>改</li>
-</ul>
-</li>
-<li><p>delet</p>
-<ul>
-<li>删</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>首部字段</p>
-<ul>
-<li><p>key value 形式</p>
-</li>
-<li><p>content-type 等</p>
-</li>
-<li><p>Cache-control</p>
-<ul>
-<li>控制缓存</li>
-</ul>
-</li>
-<li><p>if-Modified-Since</p>
-<ul>
-<li>判断服务器的资源是否更新</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="HTTP2-0"><a href="#HTTP2-0" class="headerlink" title="HTTP2.0"></a>HTTP2.0</h3><ul>
-<li>对 http 头进行一定的压缩</li>
-<li>分帧</li>
-<li>多路复用等</li>
-</ul>
-<p><strong>QUIC 协议通过基于 UDP 自定义的类似 TCP 的连接、重试、多路复用、流量控制技术，进一步提升性能。</strong></p>
-<h2 id="HTTPS"><a href="#HTTPS" class="headerlink" title="HTTPS"></a>HTTPS</h2><h3 id="对称加密"><a href="#对称加密" class="headerlink" title="对称加密"></a>对称加密</h3><ul>
-<li>加密和解密的密钥相同</li>
-<li>交互多的场景下多用对称加密</li>
-</ul>
-<h3 id="非对称加密"><a href="#非对称加密" class="headerlink" title="非对称加密"></a>非对称加密</h3><ul>
-<li>机密和解密的密钥不同</li>
-<li>客户端给服务器发送的时候，用服务器的公钥加密。而服务器给客户端发送消息的时候，使用客户端的公钥</li>
-</ul>
-<h3 id="工作模式"><a href="#工作模式" class="headerlink" title="工作模式"></a>工作模式</h3><ul>
-<li>公钥和私钥主要用于传输对称加密的秘钥</li>
-<li>双方大数据量的通信都是通过对称加密进行的</li>
-</ul>
-<h2 id="流媒体协议"><a href="#流媒体协议" class="headerlink" title="流媒体协议"></a>流媒体协议</h2><ul>
-<li><p>视频压缩</p>
-</li>
-<li><p>视频编码</p>
-<ul>
-<li>H.264/MPEG-4 AVC</li>
-<li>编码成二进制  格式</li>
-</ul>
-</li>
-</ul>
-<h2 id="DNS-协议"><a href="#DNS-协议" class="headerlink" title="DNS 协议"></a>DNS 协议</h2><ul>
-<li><p>解析流程</p>
-<ul>
-<li>本地 DNS—根域名服务器—-顶级域名服务器—-权威域名服务器—-本地 DNS</li>
-</ul>
-</li>
-<li><p>负载均衡</p>
-<ul>
-<li>域名解析的时候返回不同的 IP 地址，实现负载均衡</li>
-</ul>
-</li>
-</ul>
-<h2 id="HTTPDNS"><a href="#HTTPDNS" class="headerlink" title="HTTPDNS"></a>HTTPDNS</h2><ul>
-<li><p>传统的 DNS 有很多问题，例如解析慢、更新不及时。因为缓存、转发、NAT 问题导致客户端误会自己所在的位置和运营商，从而影响流量的调度。</p>
-</li>
-<li><p>HTTPDNS 通过客户端 SDK 和服务端，通过 HTTP 直接调用解析 DNS 的方式，绕过了传统 DNS 的这些缺点，实现了智能的调度。</p>
-</li>
-</ul>
+                <p>最近想要把 Hexo 部署到 GitHubPages 来搭建自己的博客，分享一下具体步骤。</p>
+<h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>登录自己的 GitHub 账号，然后创建一个仓库</p>
+<p><strong>repository 应该直接命名为 &lt;你的 GitHub 用户名&gt;.github.io</strong></p>
+<p><strong>这一步是必须要做的，哪怕你之前有一个仓库专门放 Hexo 的代码</strong></p>
+<h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><p>在 hexo 项目根目录</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">cnpm <span class="token function">install</span> <span class="token parameter variable">--save</span> hexo-deployer-git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="修改-config-yml-文件"><a href="#修改-config-yml-文件" class="headerlink" title="修改_config.yml 文件"></a>修改_config.yml 文件</h2><p>根目录文件夹中找到_config.yml 文件，在文件的最后，加入 如下内容</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">deploy</span><span class="token operator">:</span> type<span class="token operator">:</span> git<span class="token punctuation">;</span>
+<span class="token literal-property property">repo</span><span class="token operator">:</span> 第一步创建的仓库地址<span class="token punctuation">;</span>
+<span class="token literal-property property">branch</span><span class="token operator">:</span> master<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>例如</p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">deploy</span><span class="token operator">:</span>
+  <span class="token literal-property property">type</span><span class="token operator">:</span> git
+  <span class="token literal-property property">repo</span><span class="token operator">:</span> git@github<span class="token punctuation">.</span>com<span class="token operator">:</span>94liucc<span class="token operator">/</span>94liucc<span class="token punctuation">.</span>github<span class="token punctuation">.</span>io<span class="token punctuation">.</span>git
+  <span class="token literal-property property">branch</span><span class="token operator">:</span> master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="修改-url"><a href="#修改-url" class="headerlink" title="修改 url"></a>修改 url</h2><p>如果不去修改 Url 的话，可能导致我们的博客无法找到 css 文件</p>
+<p><strong>更改_config.yml 文件下的如下参数</strong></p>
+<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token literal-property property">url</span><span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">gitname.github.io</span><span class="token regex-delimiter">/</span></span>
+<span class="token literal-property property">root</span><span class="token operator">:</span> <span class="token operator">/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>其中 root 参数可以在自己的 github 仓库的 Settings-&gt;Pages-&gt;Branch 里面找到文件夹，默认是 root，所以参数这里填写 /</p>
+<h2 id="打包部署"><a href="#打包部署" class="headerlink" title="打包部署"></a>打包部署</h2><p>依次执行一下命令，打包部署即可</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo g
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>然后打开 git 项目地址的 Actions 等待部署完成，之后去你填写的 url 的地址就能看到你的博客了</p>
 
                 
             </div>
@@ -592,7 +525,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://94liucc.github.io/2022/02/10/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/%E5%BA%94%E7%94%A8%E5%B1%82/">https://94liucc.github.io/2022/02/10/%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/%E5%BA%94%E7%94%A8%E5%B1%82/</a>
+                    <a href="https://94liucc.github.io/2023/02/03/Hexo/">https://94liucc.github.io/2023/02/03/Hexo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -630,12 +563,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/HTTP/">
-                                    <span class="chip bg-color">HTTP</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%8D%8F%E8%AE%AE/">
-                                    <span class="chip bg-color">协议</span>
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
                         </div>
@@ -679,17 +608,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2022/03/25/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90%E4%BC%98%E5%8C%96/">
+                <a href="/2023/02/03/Hexo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="静态资源优化">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Hexo部署到GitHubPages">
                         
-                        <span class="card-title">静态资源优化</span>
+                        <span class="card-title">Hexo部署到GitHubPages</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -699,9 +629,59 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-03-25
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-02-03
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/hexo/" class="post-category">
+                                    hexo
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/03/28/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/%E6%B8%B2%E6%9F%93%E4%BC%98%E5%8C%96/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="渲染优化">
+                        
+                        <span class="card-title">渲染优化</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -719,55 +699,6 @@
                     
                     <a href="/tags/%E4%BC%98%E5%8C%96/">
                         <span class="chip bg-color">优化</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/02/03/Svg/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Svg">
-                        
-                        <span class="card-title">Svg</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-03
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%8F%AF%E8%A7%86%E5%8C%96/" class="post-category">
-                                    可视化
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/svg/">
-                        <span class="chip bg-color">svg</span>
                     </a>
                     
                 </div>
